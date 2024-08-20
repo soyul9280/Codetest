@@ -1,7 +1,7 @@
 n, k = map(int, input())
-people = for i in range(1, n+1)
+people = [for i in range(1, n+1)]
 result = []
 while people:
     for u in range(k-1):
-        result.append(people.popleft())
+        people.append(people.popleft())
     result.append()
